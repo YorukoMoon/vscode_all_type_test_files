@@ -4,7 +4,7 @@ $files = Get-ChildItem -Path $folderPath -File -Recurse
 
 # 批量修改每个文件的时间
 foreach ($file in $files) {
-    # 修改创建时间
+    # 修改创建时间          未修改
     $file.CreationTime = "2023-10-09 12:00:00"
     
     # 修改修改时间（LastWriteTime）
